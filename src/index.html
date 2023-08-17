@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/bundle.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <header>
+        <h1>Todo List</h1>
+    </header>
+    <div class="todo-list-container">
+        <div class="title-container align">
+            <h2>Today's To Do</h2>
+            <div class="refresh">
+                <button id="add-button">Refresh</button>
+            </div>
+        </div>
+        <hr>
+        <form id="new-task-form">
+                <input 
+                    type="text" 
+                    id="new-task-input" 
+                    placeholder="Add to your list..." 
+                    minlength="3"
+                >
+                <input 
+                    type="submit" 
+                    id="new-task-submit"
+                    value="Add"
+                >
+        </form>
+        <hr>
+
+        <div class="task-list">
+            <!-- <div id="tasks" class="align">
+                <div id="check-box">
+                    <input type="checkbox" id="check">
+                </div>
+                <div class="task">
+                    <div class="content">
+                        <input 
+                            type="text"
+                            class="text"
+                            value="my task"
+                        >
+                    </div>
+                </div>
+                <div class="actions">
+                    <button class="delete">Delete</button>
+                </div>
+            </div> 
+            <hr> -->
+        </div>
+
+        <div id="clear-btn-container">
+            <button type="submit" id="clear-btn">Clear all completed</button>
+        </div>
+    </div>
+    <script src="/src/index.js"></script>
+    <script src="dist/bundle.js"></script>
+</body>
+</html>

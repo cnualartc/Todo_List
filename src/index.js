@@ -1,12 +1,10 @@
 import _ from 'lodash';
+import './style.css';
 
-function component() {
- const element = document.createElement('div');
+window.addEventListener('load', () =>{
+    const form = document.querySelector("#new-task-form");
+    const input = document.querySelector("#new-task-input");
+    const listElement = document.querySelector("#tasks");
 
- // Lodash, now imported by this script
- element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
- return element;
-}
-
-document.body.appendChild(component());
+    console.log(form);
+})
